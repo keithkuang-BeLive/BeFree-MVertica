@@ -1,16 +1,34 @@
 {
   "source": "https://belive-m-vertica.keith-kuang.chatgpt.site",
-  "recoveredAtUtc": "2026-09-22T04:41:15.360163+00:00",
+  "recoveredAtUtc": "2026-09-22T04:45:09.044368+00:00",
   "recoveryType": "published-production-build",
   "originalEditableProjectRecovered": false,
   "sourceMaps": [],
-  "assetCount": 5,
-  "assetBytes": 496307,
+  "assetCount": 25,
+  "assetBytes": 6039659,
   "changesToPublishedHtml": [
     "Removed old hosting provider Cloudflare challenge injection from index.html."
   ],
   "applicationJavaScriptAndCssModified": false,
   "assets": [
+    {
+      "path": "public/analytics.js",
+      "bytes": 3167,
+      "sha256": "d72610cc4aea08624cd4305e64fa40749e0aa13c36fd1b2cec87c0507e678b8a",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "public/assets/family-freedom-zh.webp",
+      "bytes": 238548,
+      "sha256": "6e2d5f6c363b1c1a84c0cfaa5fdb2a1fb9707469366f925e723abdfb1010d3f5",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/family-freedom.webp",
+      "bytes": 235550,
+      "sha256": "e90191066e920e7259e196529d5ea636d9bba67fb94d2d2d22faeb68d87194a5",
+      "contentType": "application/octet-stream"
+    },
     {
       "path": "public/assets/index-BU1YTRwW.css",
       "bytes": 60752,
@@ -24,9 +42,111 @@
       "contentType": "text/javascript"
     },
     {
+      "path": "public/assets/living.webp",
+      "bytes": 117034,
+      "sha256": "85956073a5ed6f527920e83ae95ee7d75ab68965ce2c76e509c0fc33ba5de45c",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/logo-white.webp",
+      "bytes": 6170,
+      "sha256": "166774b86f77e54e3837480051310abbd6eac670a5af4548f001d14d725861c5",
+      "contentType": "application/octet-stream"
+    },
+    {
       "path": "public/assets/logo.webp",
       "bytes": 12698,
       "sha256": "e1dc8bd3bd05f026c8ba3e101489ae4fa316f0098401956842e391399a5ab77a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/owner-management-stress-zh.webp",
+      "bytes": 133852,
+      "sha256": "e979cb1ff6c15b5390ed5129c9573992380ecd6ba4df8a3e0c87cd290b74a60b",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/owner-management-stress.png",
+      "bytes": 1909085,
+      "sha256": "3e53a30d6fb846cae3e3f502c478939e6151488d27ecee90e0182a2de01be4fb",
+      "contentType": "image/png"
+    },
+    {
+      "path": "public/assets/owner-rental-concern-zh.webp",
+      "bytes": 122028,
+      "sha256": "96fdfdd290ea79f3377a04f8bf79d85e3c0f61379b8918486aa511df7b900c09",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/owner-rental-concern.png",
+      "bytes": 1786860,
+      "sha256": "94993bbcb1cb4dc2e565e1bbe6d68a20abfdc9e13253bf717f9e9f4c31fe5dc5",
+      "contentType": "image/png"
+    },
+    {
+      "path": "public/assets/partner-airasia-x.webp",
+      "bytes": 71380,
+      "sha256": "68858743dde1962a66069d187696211c5e256b194f2e5570f45a569ed1ac9194",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/partner-kti.png",
+      "bytes": 13934,
+      "sha256": "9eee3a37751e8b4d7182d79c27d82c2c79825d3105bc12e03973bc494e25852a",
+      "contentType": "image/png"
+    },
+    {
+      "path": "public/assets/partner-maxis.webp",
+      "bytes": 45732,
+      "sha256": "d28c7be8fe03418f46d85841de45350eba8bf87cdbd2242fc534d67928c8624a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/partner-mia.png",
+      "bytes": 14112,
+      "sha256": "8b34d5383e134344b7500bcc0a207ccaa3de206d8aa0a92e4f39d4d5972178de",
+      "contentType": "image/png"
+    },
+    {
+      "path": "public/assets/partner-tarumt.png",
+      "bytes": 28331,
+      "sha256": "f467981363cb56db376cc5f3122c83a6d039d9680abb7048d80208cdde5df1d3",
+      "contentType": "image/png"
+    },
+    {
+      "path": "public/assets/partner-uhomes.jpg",
+      "bytes": 44876,
+      "sha256": "d3276df6faeef95a215aa20c2f501404e0af113e4a872b768ccf5573131eca2b",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "public/assets/partner-unikl.png",
+      "bytes": 25027,
+      "sha256": "ed397f32645aee9f7db9d4d6049117d0aa23ca23303dd244fe511c97c9885fb0",
+      "contentType": "image/png"
+    },
+    {
+      "path": "public/assets/partner-upm.webp",
+      "bytes": 41498,
+      "sha256": "2b8e7a8a1b2b86385efab58dbe9b69494c11597e833588aeb5fe14ac610dd77c",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/ski-family-freedom-zh.webp",
+      "bytes": 242532,
+      "sha256": "1c709043c27594a54502945e4c19340265d2942169baf4ff65cef4a262179002",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/ski-family-freedom.webp",
+      "bytes": 234878,
+      "sha256": "eae2badf678ecbf53d9c34822aaebed45a22cd366bb92a87453e7d2ad7063e6d",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/assets/team.webp",
+      "bytes": 228758,
+      "sha256": "a4d83aa4cba21481196bfb16856d5d5143e20e700703d13b143b017cf1f81f62",
       "contentType": "application/octet-stream"
     },
     {
@@ -54,6 +174,7 @@
     "https://react.dev/errors/",
     "https://wa.me/601110854123?text=",
     "https://www.belive.asia/",
+    "https://www.clarity.ms/tag/",
     "https://www.youtube.com/embed/148AE76bwAk?rel=0&autoplay=0",
     "https://www.youtube.com/embed/prpjcOZr9gE?rel=0",
     "https://www.youtube.com/watch?v=148AE76bwAk",

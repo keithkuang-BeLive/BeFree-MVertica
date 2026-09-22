@@ -40,7 +40,8 @@ npm run preview
 - `public/assets/`: original published application and media files.
 - `scripts/build.mjs`: offline, dependency-free production build.
 - `scripts/serve.mjs`: local preview with language routes.
-- `scripts/import-published-site.py`: explicit one-time recovery utility, not part of normal deployment.
+- `scripts/complete-published-import.py`: explicit recovery entry point, including dynamically generated image references.
+- `scripts/import-published-site.py`: underlying recovery utility; neither script runs during normal deployment.
 - `docs/migration-manifest.json`: provenance, hashes and dependencies.
 - `docs/original-README.md`: previous repository documentation retained for reference.
 
