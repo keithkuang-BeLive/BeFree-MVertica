@@ -15,14 +15,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Recover the actual production website and local assets
-        run: python3 scripts/import-published-site.py
+      - name: Recover all published files, including dynamic media and Chinese artwork
+        run: python3 scripts/complete-published-import.py
       - name: Validate the deployment package
         run: |
           npm install --package-lock-only --ignore-scripts
           npm ci --ignore-scripts
           npm run build
           test -s dist/index.html
+          test -s dist/analytics.js
+          test -s dist/assets/ski-family-freedom-zh.webp
           test -s vercel.json
       - name: Save recovered files to this migration branch
         run: |
@@ -30,6 +32,6 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public docs scripts README.md package.json package-lock.json vercel.json .gitignore
           if ! git diff --cached --quiet; then
-            git commit -m 'Import actual published M Vertica website and Vercel deployment package'
+            git commit -m 'Import complete published M Vertica site assets and deployment files'
             git push origin HEAD:import/mvertica-site
           fi
