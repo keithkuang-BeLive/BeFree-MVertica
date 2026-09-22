@@ -1,20 +1,51 @@
-# M Vertica by BeLive
+# BeLive M Vertica — published website migration
 
-React + TypeScript + Vite marketing website. Production domain: mvertica-freedom.belive.my.
+This repository preserves the production website published at
+https://belive-m-vertica.keith-kuang.chatgpt.site/ .
 
-## Local use
+## Important: production build, not original editable source
 
-Run `npm ci`, then `npm run dev`. Run `npm run build` for production.
+The recovered files are the actual published HTML, compiled JavaScript, stylesheet and local images. This is **not** a redesigned approximation. The original React/TypeScript component tree and original Vite configuration were not supplied by the website export interface. Do not mistake the compiled application for that editable source project. See `docs/migration-manifest.json` for source-map recovery results and exact asset checksums.
 
-## Vercel
+## Deploy on Vercel
 
-Import this repository as a Vite project. Build: `npm run build`. Output: `dist`.
-Add `mvertica-freedom.belive.my` to the project and configure the exact DNS record Vercel supplies. Do not replace the belive.my root-domain records.
+Import `keithkuang-BeLive/BeFree-MVertica` and choose:
 
-Language routes: `/en` (English), `/zh` (Simplified Chinese), `/ms` (Bahasa Melayu). Direct routes override remembered language preferences. The selector keeps the route in sync. Existing `?lang=` links remain accepted at the root.
+- Production branch: `main`
+- Framework preset: **Other** (not Vite; this is already built)
+- Root directory: repository root (`.`)
+- Build command: `npm run build`
+- Output directory: `dist`
+- No application environment variables are required for this recovered static build.
 
-All editorial changes apply to all three languages unless explicitly requested otherwise. Chinese has separate fictional lifestyle images. All page motion is disabled. WhatsApp opens a draft only. Microsoft Clarity remains inactive until a valid project ID is configured.
+`vercel.json` supplies the build settings and direct-route rewrites for `/en`, `/zh` and `/ms`. The normal build only copies tracked local files. It does **not** scrape or proxy the ChatGPT-hosted website.
 
-## Publishing status
+Only add `mvertica-freedom.belive.my` after verifying the Vercel preview. Configure the exact DNS record Vercel supplies for that subdomain; do not replace the `belive.my` root-domain records. A GitHub transfer does not itself make the custom domain live.
 
-This package is prepared for deployment; the custom domain is not live until Vercel deployment and DNS verification succeed.
+## Local preview
+
+Node.js 22 or later is sufficient. There are no application npm dependencies.
+
+```sh
+npm ci
+npm run dev
+# http://127.0.0.1:4173
+npm run build
+npm run preview
+```
+
+## Files
+
+- `public/index.html`: entry document; old-host Cloudflare challenge injection removed.
+- `public/assets/`: original published application and media files.
+- `scripts/build.mjs`: offline, dependency-free production build.
+- `scripts/serve.mjs`: local preview with language routes.
+- `scripts/import-published-site.py`: explicit one-time recovery utility, not part of normal deployment.
+- `docs/migration-manifest.json`: provenance, hashes and dependencies.
+- `docs/original-README.md`: previous repository documentation retained for reference.
+
+## Preserved dependencies and limitations
+
+External Google/CDN fonts, YouTube embeds and thumbnails, review destinations, email and WhatsApp links remain external as in the published site. WhatsApp links open a draft; automated verification must not send messages. Microsoft Clarity remains unconfigured unless its existing blank project identifier is explicitly configured.
+
+For ongoing React/TypeScript development, obtain the original project export and replace this recovered build through a reviewed migration. Editing generated/minified JavaScript directly is not a maintainable substitute for original source.

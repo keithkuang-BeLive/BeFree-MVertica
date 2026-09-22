@@ -1,0 +1,63 @@
+{
+  "source": "https://belive-m-vertica.keith-kuang.chatgpt.site",
+  "recoveredAtUtc": "2026-09-22T04:41:15.360163+00:00",
+  "recoveryType": "published-production-build",
+  "originalEditableProjectRecovered": false,
+  "sourceMaps": [],
+  "assetCount": 5,
+  "assetBytes": 496307,
+  "changesToPublishedHtml": [
+    "Removed old hosting provider Cloudflare challenge injection from index.html."
+  ],
+  "applicationJavaScriptAndCssModified": false,
+  "assets": [
+    {
+      "path": "public/assets/index-BU1YTRwW.css",
+      "bytes": 60752,
+      "sha256": "431a794875bd48940c465475f1f481d53900526ec5b346e03f3b7f1c41597b8e",
+      "contentType": "text/css"
+    },
+    {
+      "path": "public/assets/index-CHKnvv48.js",
+      "bytes": 296365,
+      "sha256": "d780a9abd37f9a41251372b5dcfc0d286fa2d7768b5522fa24a999d951b43ebb",
+      "contentType": "text/javascript"
+    },
+    {
+      "path": "public/assets/logo.webp",
+      "bytes": 12698,
+      "sha256": "e1dc8bd3bd05f026c8ba3e101489ae4fa316f0098401956842e391399a5ab77a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/fonts/instrument-serif-italic.ttf",
+      "bytes": 64208,
+      "sha256": "fecf4861d5202405b8bd45c683858b6870642a026784fe0dbf88ff55dedee8a0",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "public/fonts/instrument-serif-regular.ttf",
+      "bytes": 62284,
+      "sha256": "a99e3db50076202713812ed541feeb23ffeebb61db1fa6b1cf48fe590d37ef18",
+      "contentType": "application/octet-stream"
+    }
+  ],
+  "externalUrls": [
+    "http://www.w3.org/1998/Math/MathML",
+    "http://www.w3.org/1999/xlink",
+    "http://www.w3.org/2000/svg",
+    "http://www.w3.org/XML/1998/namespace",
+    "https://fonts.cdnfonts.com/s/15011/Dirtyline36DaysofType.woff",
+    "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&display=swap",
+    "https://maps.app.goo.gl/Z5yyBCq8m8SkzWN36",
+    "https://privacy.microsoft.com/privacystatement",
+    "https://react.dev/errors/",
+    "https://wa.me/601110854123?text=",
+    "https://www.belive.asia/",
+    "https://www.youtube.com/embed/148AE76bwAk?rel=0&autoplay=0",
+    "https://www.youtube.com/embed/prpjcOZr9gE?rel=0",
+    "https://www.youtube.com/watch?v=148AE76bwAk",
+    "https://www.youtube.com/watch?v=prpjcOZr9gE"
+  ],
+  "verificationStatus": "Browser checks must be recorded separately."
+}
