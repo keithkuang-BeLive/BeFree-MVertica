@@ -1,0 +1,63 @@
+name: Inspect M Vertica published export
+on:
+  push:
+    branches: [import/mvertica-site]
+    paths: [.github/workflows/inspect-site-export.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read the public website and identify its published assets
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import urllib.request
+          import urllib.parse
+          from html.parser import HTMLParser
+
+          origin = 'https://belive-m-vertica.keith-kuang.chatgpt.site/'
+          class Assets(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.urls = []
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == 'script' and attrs.get('src'):
+                      self.urls.append(attrs['src'])
+                  if tag == 'link' and attrs.get('href'):
+                      self.urls.append(attrs['href'])
+          def read(url):
+              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 BeLive-Website-Migration'})
+              with urllib.request.urlopen(req, timeout=40) as r:
+                  raw = r.read(4_000_000)
+                  return r.geturl(), r.headers.get('Content-Type', ''), raw
+          try:
+              final_url, content_type, raw = read(origin)
+              text = raw.decode('utf-8', errors='replace')
+              print('PAGE_METADATA', json.dumps({'url': final_url, 'content_type': content_type, 'bytes': len(raw)}))
+              print('PAGE_HTML_BEGIN')
+              print(text[:70000])
+              print('PAGE_HTML_END')
+              parser = Assets()
+              parser.feed(text)
+              print('ASSET_REFERENCES', json.dumps(parser.urls))
+              for asset in parser.urls:
+                  url = urllib.parse.urljoin(final_url, asset)
+                  if urllib.parse.urlsplit(url).netloc != urllib.parse.urlsplit(final_url).netloc:
+                      continue
+                  if not urllib.parse.urlsplit(url).path.endswith(('.js', '.css')):
+                      continue
+                  asset_url, asset_type, asset_raw = read(url)
+                  print('ASSET_METADATA', json.dumps({'url': asset_url, 'content_type': asset_type, 'bytes': len(asset_raw)}))
+                  print('ASSET_SAMPLE_BEGIN')
+                  print(asset_raw.decode('utf-8', errors='replace')[:5000])
+                  print('ASSET_SAMPLE_END')
+          except Exception as exc:
+              print('RECOVERY_ERROR', type(exc).__name__, str(exc))
+              raise
+          PY
