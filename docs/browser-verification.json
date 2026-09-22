@@ -1,0 +1,1248 @@
+{
+  "checkedAtUtc": "2026-09-22T04:49:19.994Z",
+  "environment": "Chromium on GitHub Actions; local production build, not a Vercel deployment",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Recovered asset hashes match the source manifest",
+      "passed": true,
+      "details": {
+        "assetCount": 25,
+        "bytes": 6039659
+      }
+    },
+    {
+      "name": "Build contains every tracked public asset",
+      "passed": true
+    },
+    {
+      "name": "en-1440: direct entry chooses requested language",
+      "passed": true,
+      "details": {
+        "finalUrl": "http://127.0.0.1:4173/?lang=en"
+      }
+    },
+    {
+      "name": "en-1440: correct document language",
+      "passed": true
+    },
+    {
+      "name": "en-1440: meaningful page content",
+      "passed": true
+    },
+    {
+      "name": "en-1440: all page images load",
+      "passed": true,
+      "details": [
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/ski-family-freedom.webp",
+          "complete": true,
+          "width": 1672
+        },
+        {
+          "path": "/assets/owner-rental-concern.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/owner-management-stress.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-tarumt.png",
+          "complete": true,
+          "width": 380
+        },
+        {
+          "path": "/assets/partner-upm.webp",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "path": "/assets/partner-unikl.png",
+          "complete": true,
+          "width": 220
+        },
+        {
+          "path": "/assets/partner-mia.png",
+          "complete": true,
+          "width": 200
+        },
+        {
+          "path": "/assets/partner-uhomes.jpg",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-airasia-x.webp",
+          "complete": true,
+          "width": 1400
+        },
+        {
+          "path": "/assets/partner-kti.png",
+          "complete": true,
+          "width": 760
+        },
+        {
+          "path": "/assets/partner-maxis.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/team.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/living.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/family-freedom.webp",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        }
+      ]
+    },
+    {
+      "name": "en-1440: correct language-specific artwork",
+      "passed": true
+    },
+    {
+      "name": "en-1440: all in-page links have targets",
+      "passed": true,
+      "details": {
+        "count": 14
+      }
+    },
+    {
+      "name": "en-1440: analytics stays off without project ID",
+      "passed": true
+    },
+    {
+      "name": "en-1440: every WhatsApp link has correct number and draft",
+      "passed": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "name": "en-1440: WhatsApp button opens a draft destination",
+      "passed": true
+    },
+    {
+      "name": "en-1440: results navigation works",
+      "passed": true
+    },
+    {
+      "name": "en-1440: support tab 2 responds",
+      "passed": true
+    },
+    {
+      "name": "en-1440: support tab 3 responds",
+      "passed": true
+    },
+    {
+      "name": "en-1440: support tab 1 responds",
+      "passed": true
+    },
+    {
+      "name": "en-1440: credentials disclosure opens",
+      "passed": true
+    },
+    {
+      "name": "en-1440: language selector updates the page and URL",
+      "passed": true
+    },
+    {
+      "name": "en-1440: selected language survives reload",
+      "passed": true
+    },
+    {
+      "name": "en-1440: telephone and email destinations preserved",
+      "passed": true
+    },
+    {
+      "name": "en-1440: no application JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "en-1440: no local missing resources",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "zh-1440: direct entry chooses requested language",
+      "passed": true,
+      "details": {
+        "finalUrl": "http://127.0.0.1:4173/?lang=zh"
+      }
+    },
+    {
+      "name": "zh-1440: correct document language",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: meaningful page content",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: all page images load",
+      "passed": true,
+      "details": [
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/ski-family-freedom-zh.webp",
+          "complete": true,
+          "width": 1671
+        },
+        {
+          "path": "/assets/owner-rental-concern-zh.webp",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/owner-management-stress-zh.webp",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-tarumt.png",
+          "complete": true,
+          "width": 380
+        },
+        {
+          "path": "/assets/partner-upm.webp",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "path": "/assets/partner-unikl.png",
+          "complete": true,
+          "width": 220
+        },
+        {
+          "path": "/assets/partner-mia.png",
+          "complete": true,
+          "width": 200
+        },
+        {
+          "path": "/assets/partner-uhomes.jpg",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-airasia-x.webp",
+          "complete": true,
+          "width": 1400
+        },
+        {
+          "path": "/assets/partner-kti.png",
+          "complete": true,
+          "width": 760
+        },
+        {
+          "path": "/assets/partner-maxis.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/team.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/living.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/family-freedom-zh.webp",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        }
+      ]
+    },
+    {
+      "name": "zh-1440: correct language-specific artwork",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: all in-page links have targets",
+      "passed": true,
+      "details": {
+        "count": 14
+      }
+    },
+    {
+      "name": "zh-1440: analytics stays off without project ID",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: every WhatsApp link has correct number and draft",
+      "passed": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "name": "zh-1440: WhatsApp button opens a draft destination",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: results navigation works",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: support tab 2 responds",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: support tab 3 responds",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: support tab 1 responds",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: credentials disclosure opens",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: language selector updates the page and URL",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: selected language survives reload",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: telephone and email destinations preserved",
+      "passed": true
+    },
+    {
+      "name": "zh-1440: no application JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "zh-1440: no local missing resources",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "ms-1440: direct entry chooses requested language",
+      "passed": true,
+      "details": {
+        "finalUrl": "http://127.0.0.1:4173/?lang=ms"
+      }
+    },
+    {
+      "name": "ms-1440: correct document language",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: meaningful page content",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: all page images load",
+      "passed": true,
+      "details": [
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/ski-family-freedom.webp",
+          "complete": true,
+          "width": 1672
+        },
+        {
+          "path": "/assets/owner-rental-concern.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/owner-management-stress.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-tarumt.png",
+          "complete": true,
+          "width": 380
+        },
+        {
+          "path": "/assets/partner-upm.webp",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "path": "/assets/partner-unikl.png",
+          "complete": true,
+          "width": 220
+        },
+        {
+          "path": "/assets/partner-mia.png",
+          "complete": true,
+          "width": 200
+        },
+        {
+          "path": "/assets/partner-uhomes.jpg",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-airasia-x.webp",
+          "complete": true,
+          "width": 1400
+        },
+        {
+          "path": "/assets/partner-kti.png",
+          "complete": true,
+          "width": 760
+        },
+        {
+          "path": "/assets/partner-maxis.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/team.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/living.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/family-freedom.webp",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        }
+      ]
+    },
+    {
+      "name": "ms-1440: correct language-specific artwork",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: all in-page links have targets",
+      "passed": true,
+      "details": {
+        "count": 14
+      }
+    },
+    {
+      "name": "ms-1440: analytics stays off without project ID",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: every WhatsApp link has correct number and draft",
+      "passed": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "name": "ms-1440: WhatsApp button opens a draft destination",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: results navigation works",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: support tab 2 responds",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: support tab 3 responds",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: support tab 1 responds",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: credentials disclosure opens",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: language selector updates the page and URL",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: selected language survives reload",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: telephone and email destinations preserved",
+      "passed": true
+    },
+    {
+      "name": "ms-1440: no application JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "ms-1440: no local missing resources",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "en-390: direct entry chooses requested language",
+      "passed": true,
+      "details": {
+        "finalUrl": "http://127.0.0.1:4173/?lang=en"
+      }
+    },
+    {
+      "name": "en-390: correct document language",
+      "passed": true
+    },
+    {
+      "name": "en-390: meaningful page content",
+      "passed": true
+    },
+    {
+      "name": "en-390: all page images load",
+      "passed": true,
+      "details": [
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/ski-family-freedom.webp",
+          "complete": true,
+          "width": 1672
+        },
+        {
+          "path": "/assets/owner-rental-concern.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/owner-management-stress.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-tarumt.png",
+          "complete": true,
+          "width": 380
+        },
+        {
+          "path": "/assets/partner-upm.webp",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "path": "/assets/partner-unikl.png",
+          "complete": true,
+          "width": 220
+        },
+        {
+          "path": "/assets/partner-mia.png",
+          "complete": true,
+          "width": 200
+        },
+        {
+          "path": "/assets/partner-uhomes.jpg",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-airasia-x.webp",
+          "complete": true,
+          "width": 1400
+        },
+        {
+          "path": "/assets/partner-kti.png",
+          "complete": true,
+          "width": 760
+        },
+        {
+          "path": "/assets/partner-maxis.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/team.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/living.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/family-freedom.webp",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        }
+      ]
+    },
+    {
+      "name": "en-390: correct language-specific artwork",
+      "passed": true
+    },
+    {
+      "name": "en-390: all in-page links have targets",
+      "passed": true,
+      "details": {
+        "count": 14
+      }
+    },
+    {
+      "name": "en-390: analytics stays off without project ID",
+      "passed": true
+    },
+    {
+      "name": "en-390: every WhatsApp link has correct number and draft",
+      "passed": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "name": "en-390: WhatsApp button opens a draft destination",
+      "passed": true
+    },
+    {
+      "name": "en-390: mobile navigation opens",
+      "passed": true
+    },
+    {
+      "name": "en-390: results navigation works",
+      "passed": true
+    },
+    {
+      "name": "en-390: menu closes after navigation",
+      "passed": true
+    },
+    {
+      "name": "en-390: support tab 2 responds",
+      "passed": true
+    },
+    {
+      "name": "en-390: support tab 3 responds",
+      "passed": true
+    },
+    {
+      "name": "en-390: support tab 1 responds",
+      "passed": true
+    },
+    {
+      "name": "en-390: credentials disclosure opens",
+      "passed": true
+    },
+    {
+      "name": "en-390: mobile question carousel responds",
+      "passed": true
+    },
+    {
+      "name": "en-390: language selector updates the page and URL",
+      "passed": true
+    },
+    {
+      "name": "en-390: selected language survives reload",
+      "passed": true
+    },
+    {
+      "name": "en-390: telephone and email destinations preserved",
+      "passed": true
+    },
+    {
+      "name": "en-390: no application JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "en-390: no local missing resources",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "zh-390: direct entry chooses requested language",
+      "passed": true,
+      "details": {
+        "finalUrl": "http://127.0.0.1:4173/?lang=zh"
+      }
+    },
+    {
+      "name": "zh-390: correct document language",
+      "passed": true
+    },
+    {
+      "name": "zh-390: meaningful page content",
+      "passed": true
+    },
+    {
+      "name": "zh-390: all page images load",
+      "passed": true,
+      "details": [
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/ski-family-freedom-zh.webp",
+          "complete": true,
+          "width": 1671
+        },
+        {
+          "path": "/assets/owner-rental-concern-zh.webp",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/owner-management-stress-zh.webp",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-tarumt.png",
+          "complete": true,
+          "width": 380
+        },
+        {
+          "path": "/assets/partner-upm.webp",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "path": "/assets/partner-unikl.png",
+          "complete": true,
+          "width": 220
+        },
+        {
+          "path": "/assets/partner-mia.png",
+          "complete": true,
+          "width": 200
+        },
+        {
+          "path": "/assets/partner-uhomes.jpg",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-airasia-x.webp",
+          "complete": true,
+          "width": 1400
+        },
+        {
+          "path": "/assets/partner-kti.png",
+          "complete": true,
+          "width": 760
+        },
+        {
+          "path": "/assets/partner-maxis.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/team.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/living.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/family-freedom-zh.webp",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        }
+      ]
+    },
+    {
+      "name": "zh-390: correct language-specific artwork",
+      "passed": true
+    },
+    {
+      "name": "zh-390: all in-page links have targets",
+      "passed": true,
+      "details": {
+        "count": 14
+      }
+    },
+    {
+      "name": "zh-390: analytics stays off without project ID",
+      "passed": true
+    },
+    {
+      "name": "zh-390: every WhatsApp link has correct number and draft",
+      "passed": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "name": "zh-390: WhatsApp button opens a draft destination",
+      "passed": true
+    },
+    {
+      "name": "zh-390: mobile navigation opens",
+      "passed": true
+    },
+    {
+      "name": "zh-390: results navigation works",
+      "passed": true
+    },
+    {
+      "name": "zh-390: menu closes after navigation",
+      "passed": true
+    },
+    {
+      "name": "zh-390: support tab 2 responds",
+      "passed": true
+    },
+    {
+      "name": "zh-390: support tab 3 responds",
+      "passed": true
+    },
+    {
+      "name": "zh-390: support tab 1 responds",
+      "passed": true
+    },
+    {
+      "name": "zh-390: credentials disclosure opens",
+      "passed": true
+    },
+    {
+      "name": "zh-390: mobile question carousel responds",
+      "passed": true
+    },
+    {
+      "name": "zh-390: language selector updates the page and URL",
+      "passed": true
+    },
+    {
+      "name": "zh-390: selected language survives reload",
+      "passed": true
+    },
+    {
+      "name": "zh-390: telephone and email destinations preserved",
+      "passed": true
+    },
+    {
+      "name": "zh-390: no application JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "zh-390: no local missing resources",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "ms-390: direct entry chooses requested language",
+      "passed": true,
+      "details": {
+        "finalUrl": "http://127.0.0.1:4173/?lang=ms"
+      }
+    },
+    {
+      "name": "ms-390: correct document language",
+      "passed": true
+    },
+    {
+      "name": "ms-390: meaningful page content",
+      "passed": true
+    },
+    {
+      "name": "ms-390: all page images load",
+      "passed": true,
+      "details": [
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/ski-family-freedom.webp",
+          "complete": true,
+          "width": 1672
+        },
+        {
+          "path": "/assets/owner-rental-concern.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/owner-management-stress.png",
+          "complete": true,
+          "width": 1254
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-tarumt.png",
+          "complete": true,
+          "width": 380
+        },
+        {
+          "path": "/assets/partner-upm.webp",
+          "complete": true,
+          "width": 1500
+        },
+        {
+          "path": "/assets/partner-unikl.png",
+          "complete": true,
+          "width": 220
+        },
+        {
+          "path": "/assets/partner-mia.png",
+          "complete": true,
+          "width": 200
+        },
+        {
+          "path": "/assets/partner-uhomes.jpg",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/partner-airasia-x.webp",
+          "complete": true,
+          "width": 1400
+        },
+        {
+          "path": "/assets/partner-kti.png",
+          "complete": true,
+          "width": 760
+        },
+        {
+          "path": "/assets/partner-maxis.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/logo.webp",
+          "complete": true,
+          "width": 1024
+        },
+        {
+          "path": "/assets/team.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/living.webp",
+          "complete": true,
+          "width": 1800
+        },
+        {
+          "path": "/assets/family-freedom.webp",
+          "complete": true,
+          "width": 1536
+        },
+        {
+          "path": "/assets/logo-white.webp",
+          "complete": true,
+          "width": 1024
+        }
+      ]
+    },
+    {
+      "name": "ms-390: correct language-specific artwork",
+      "passed": true
+    },
+    {
+      "name": "ms-390: all in-page links have targets",
+      "passed": true,
+      "details": {
+        "count": 14
+      }
+    },
+    {
+      "name": "ms-390: analytics stays off without project ID",
+      "passed": true
+    },
+    {
+      "name": "ms-390: every WhatsApp link has correct number and draft",
+      "passed": true,
+      "details": {
+        "count": 8
+      }
+    },
+    {
+      "name": "ms-390: WhatsApp button opens a draft destination",
+      "passed": true
+    },
+    {
+      "name": "ms-390: mobile navigation opens",
+      "passed": true
+    },
+    {
+      "name": "ms-390: results navigation works",
+      "passed": true
+    },
+    {
+      "name": "ms-390: menu closes after navigation",
+      "passed": true
+    },
+    {
+      "name": "ms-390: support tab 2 responds",
+      "passed": true
+    },
+    {
+      "name": "ms-390: support tab 3 responds",
+      "passed": true
+    },
+    {
+      "name": "ms-390: support tab 1 responds",
+      "passed": true
+    },
+    {
+      "name": "ms-390: credentials disclosure opens",
+      "passed": true
+    },
+    {
+      "name": "ms-390: mobile question carousel responds",
+      "passed": true
+    },
+    {
+      "name": "ms-390: language selector updates the page and URL",
+      "passed": true
+    },
+    {
+      "name": "ms-390: selected language survives reload",
+      "passed": true
+    },
+    {
+      "name": "ms-390: telephone and email destinations preserved",
+      "passed": true
+    },
+    {
+      "name": "ms-390: no application JavaScript exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "ms-390: no local missing resources",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "en-1440",
+      "imageCount": 20,
+      "whatsappLinks": 8,
+      "screenshot": "en-1440.png",
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "name": "zh-1440",
+      "imageCount": 20,
+      "whatsappLinks": 8,
+      "screenshot": "zh-1440.png",
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "name": "ms-1440",
+      "imageCount": 20,
+      "whatsappLinks": 8,
+      "screenshot": "ms-1440.png",
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "name": "en-390",
+      "imageCount": 20,
+      "whatsappLinks": 8,
+      "screenshot": "en-390.png",
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "name": "zh-390",
+      "imageCount": 20,
+      "whatsappLinks": 8,
+      "screenshot": "zh-390.png",
+      "errors": [],
+      "localFailures": []
+    },
+    {
+      "name": "ms-390",
+      "imageCount": 20,
+      "whatsappLinks": 8,
+      "screenshot": "ms-390.png",
+      "errors": [],
+      "localFailures": []
+    }
+  ],
+  "externalFailures": [],
+  "messagesSent": 0,
+  "limitations": [
+    "YouTube playback is not tested; embeds are isolated during browser checks.",
+    "External fonts and services remain third-party dependencies.",
+    "Vercel hosting and custom-domain DNS are not changed or verified by this test."
+  ],
+  "passedChecks": 125,
+  "failedChecks": 0
+}

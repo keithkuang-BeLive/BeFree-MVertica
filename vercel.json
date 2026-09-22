@@ -3,30 +3,36 @@
   "framework": null,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [
+  "redirects": [
     {
       "source": "/en",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/zh",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/ms",
-      "destination": "/index.html"
+      "destination": "/?lang=en",
+      "permanent": false
     },
     {
       "source": "/en/",
-      "destination": "/index.html"
+      "destination": "/?lang=en",
+      "permanent": false
+    },
+    {
+      "source": "/zh",
+      "destination": "/?lang=zh",
+      "permanent": false
     },
     {
       "source": "/zh/",
-      "destination": "/index.html"
+      "destination": "/?lang=zh",
+      "permanent": false
+    },
+    {
+      "source": "/ms",
+      "destination": "/?lang=ms",
+      "permanent": false
     },
     {
       "source": "/ms/",
-      "destination": "/index.html"
+      "destination": "/?lang=ms",
+      "permanent": false
     }
   ]
 }

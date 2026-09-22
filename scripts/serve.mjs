@@ -3,12 +3,18 @@ import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 const root = path.resolve(process.argv[2] || 'public');
 const port = Number(process.env.PORT || 4173);
-const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.json':'application/json','.ico':'image/x-icon','.mp4':'video/mp4','.woff':'font/woff','.woff2':'font/woff2'};
+const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.json':'application/json','.ico':'image/x-icon','.mp4':'video/mp4','.ttf':'font/ttf','.woff':'font/woff','.woff2':'font/woff2'};
 http.createServer(async (req, res) => {
  try {
   const url = new URL(req.url, 'http://localhost');
   let pathname = decodeURIComponent(url.pathname);
-  if (/^\/(?:en|zh|ms)?\/?$/.test(pathname)) pathname = '/index.html';
+  const languageRoute = pathname.match(/^\/(en|zh|ms)\/?$/);
+  if (languageRoute) {
+    url.searchParams.set('lang', languageRoute[1]);
+    res.writeHead(307, { Location: '/' + url.search });
+    res.end(); return;
+  }
+  if (pathname === '/') pathname = '/index.html';
   const file = path.resolve(root, '.' + pathname);
   if (!file.startsWith(root + path.sep)) { res.writeHead(403); res.end(); return; }
   if (!(await stat(file)).isFile()) throw new Error('Not a file');

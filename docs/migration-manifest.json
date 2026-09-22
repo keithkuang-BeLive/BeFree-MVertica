@@ -1,6 +1,6 @@
 {
   "source": "https://belive-m-vertica.keith-kuang.chatgpt.site",
-  "recoveredAtUtc": "2026-09-22T04:45:09.044368+00:00",
+  "recoveredAtUtc": "2026-09-22T04:48:51.207965+00:00",
   "recoveryType": "published-production-build",
   "originalEditableProjectRecovered": false,
   "sourceMaps": [],
@@ -180,5 +180,6 @@
     "https://www.youtube.com/watch?v=148AE76bwAk",
     "https://www.youtube.com/watch?v=prpjcOZr9gE"
   ],
-  "verificationStatus": "Browser checks must be recorded separately."
+  "verificationStatus": "Browser checks must be recorded separately.",
+  "languageRouting": "Host aliases /en, /zh and /ms redirect to original query-based language selection; application code is unchanged."
 }
