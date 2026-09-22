@@ -1,0 +1,38 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/en",
+      "destination": "/?lang=en",
+      "permanent": false
+    },
+    {
+      "source": "/en/",
+      "destination": "/?lang=en",
+      "permanent": false
+    },
+    {
+      "source": "/zh",
+      "destination": "/?lang=zh",
+      "permanent": false
+    },
+    {
+      "source": "/zh/",
+      "destination": "/?lang=zh",
+      "permanent": false
+    },
+    {
+      "source": "/ms",
+      "destination": "/?lang=ms",
+      "permanent": false
+    },
+    {
+      "source": "/ms/",
+      "destination": "/?lang=ms",
+      "permanent": false
+    }
+  ]
+}
