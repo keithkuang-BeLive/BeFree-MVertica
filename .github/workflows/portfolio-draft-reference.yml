@@ -1,0 +1,23 @@
+name: Prepare portfolio draft reference
+on:
+  push:
+    branches: [draft/befree-portfolio]
+    paths: [.github/workflows/portfolio-draft-reference.yml]
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-draft-reference
+          path: |
+            public/
+            scripts/
+            package.json
+            package-lock.json
+            vercel.json
+            README.md
+          retention-days: 2
