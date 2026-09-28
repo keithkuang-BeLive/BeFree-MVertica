@@ -72,13 +72,13 @@ async function main() {
           const whatsapps = await page.locator('a[href^="https://wa.me/"]').evaluateAll(links => links.map(link => ({ href: link.href, target: link.target, rel: link.rel })));
           check(`${label}: every WhatsApp link has correct number and draft`, whatsapps.length >= 5 && whatsapps.every(link => {
             const url = new URL(link.href);
-            return url.pathname === '/601110854123' && Boolean(url.searchParams.get('text')) && link.target === '_blank' && link.rel.includes('noopener');
+            return url.pathname === '/60103154260' && Boolean(url.searchParams.get('text')) && link.target === '_blank' && link.rel.includes('noopener');
           }), { count: whatsapps.length });
           const popupPromise = page.waitForEvent('popup');
           await page.locator('.hero-button').click();
           const popup = await popupPromise;
           await popup.waitForLoadState('domcontentloaded');
-          check(`${label}: WhatsApp button opens a draft destination`, popup.url().startsWith('https://wa.me/601110854123?text='));
+          check(`${label}: WhatsApp button opens a draft destination`, popup.url().startsWith('https://wa.me/60103154260?text='));
           await popup.close();
           if (width < 600) {
             await page.locator('.mobile-menu').click();
@@ -106,7 +106,7 @@ async function main() {
           await page.reload({ waitUntil: 'domcontentloaded' });
           await settle(page);
           check(`${label}: selected language survives reload`, await page.locator('.site-shell').getAttribute('data-language') === changedLang);
-          check(`${label}: telephone and email destinations preserved`, await page.locator('a[href="tel:+601110854123"]').count() === 1 && await page.locator('a[href="mailto:info@belive.asia"]').count() === 1);
+          check(`${label}: telephone and email destinations preserved`, await page.locator('a[href="tel:+60103154260"]').count() === 1 && await page.locator('a[href="mailto:info@belive.asia"]').count() === 1);
           check(`${label}: no application JavaScript exceptions`, scriptErrors.length === 0, scriptErrors);
           check(`${label}: no local missing resources`, localFailures.length === 0, localFailures);
           report.scenarios.push({ name: label, imageCount: images.length, whatsappLinks: whatsapps.length, screenshot: `${label}.png`, errors: scriptErrors, localFailures });
